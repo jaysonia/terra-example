@@ -52,7 +52,8 @@ variable "app_environment_variables" {
   description = "A map of environment variables to pass to the application container."
   type        = map(string)
   default = {
-    APP_MESSAGE = "Hello from Fargate!"
+    ENV = "PROD",
+    APPLICATION = "WEB-APP"
   }
 }
 
